@@ -6,7 +6,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -15,12 +15,17 @@ body{
     background: linear-gradient(45deg, #0a0a0a, #3a4452);
 }
 
+
 .calculator {
     border: 1px solid #717377b6;
     padding: 15px;
     border-radius: 15px;
     box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
     background: linear-gradient(45deg, #0a0a0a, #3a445209);
+}
+
+.calculator.light {
+    background: #ffffff;
 }
 
 .icons {
@@ -32,22 +37,46 @@ body{
     color: #ffffff;
 }
 
-input {
-    width: 265px;
-    height: 75px;
+#mode {
+    cursor: pointer;
+}
+
+.icons.light {
+    color:#111111;
+}
+
+.inputBox {
+    width: 285px;
+    height: 100px;
     border: none;
+    border-radius: 1rem;
     background: transparent;
     color: #ffffff;
     text-align: right;
-    margin: 10px;
-    font-size: 50px;
+    margin-top: 1.2rem;
+    margin-bottom: 1.3rem;
+    padding-right: 1rem;
+    font-size: 3.1rem;
+    box-shadow: inset 2px 2px 10px rgba(113, 115, 119, 0.5);
 }
 
-input::placeholder{
+.inputBox.light {
+    box-shadow: inset 3px 3px 15px rgba(113, 115, 119, 0.899);
+}
+
+.inputBox.light {
+    color: #111111;
+}
+
+.inputBox::placeholder{
     color: #ffffff;
 }
 
-button{
+.inputBox.light::placeholder {
+    color: #111111;
+}
+
+.button{
     height: 60px;
     width: 60px;
     border: none;
@@ -56,12 +85,19 @@ button{
     background-color: #111111;
     border-radius: 50%;
     box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.3);
-    
-
 }
-button:active {
+
+.button.light-shadow   {
+    box-shadow: -10px -8px 15px rgba(113, 115, 119, 0.923);
+}
+
+.button:hover {
     cursor: pointer;
-    background-color: transparent;
+}
+
+.button:active {
+    cursor: pointer;
+    background: rgba(100, 108, 117, 0.901);
 }
 
 .equalBtn{
@@ -73,6 +109,9 @@ button:active {
 }
 
 .operator {
-   color: #6dee0a;
+   color: rgba(80, 168, 255, 0.901);
+}
 
+.operator.light {
+   color: #6dee0a;
 }

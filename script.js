@@ -59,6 +59,7 @@ mode.addEventListener("click", () => {
     calc.classList.toggle('light');
     icons.classList.toggle('light');
     input.classList.toggle('light');
+    mode.classList.toggle('fa-moon');
     btns.forEach((btn) => {
         btn.classList.toggle('light-shadow');
     })
